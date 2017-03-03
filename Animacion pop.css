@@ -1,0 +1,227 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 1000px;
+	background-color: #4EF8FF;
+}
+#lanzaguisantes {
+	width: 300px;
+	height: 400px;
+	margin: auto;
+	margin-top: 200px;
+}
+@keyframes cabeza {
+	0% {
+		
+	}
+	50% {
+		transform: translate(-15px);
+	}
+	100% {
+		transform: translate(15px);
+	}
+}
+#cabeza	{
+	position: relative;
+	width: 180px;
+	height: 150px;
+	margin: 0 auto;
+	background-color: #A4FF2D;
+	border-radius: 15px;
+	-ms-animation-name: cabeza;
+	-ms-animation-delay: 1s;
+	-ms-animation-duration: 5s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	-ms-animation-direction: alternate;
+	background-image: radial-gradient(#A4FF2D, #81DE27 80%); 
+	z-index: 10;
+}
+@keyframes tallo {
+	0% {
+		
+	}
+	50% {
+		transform: skewX(5deg);
+	}
+	100% {
+		transform: skewX(-5deg);
+	}
+}
+#tallo {
+	width: 30px;
+	height: 170px;
+	margin: 0 auto;
+	background-color: green;
+	-ms-animation-name: tallo;
+	-ms-animation-delay: 1s;
+	-ms-animation-duration: 5s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	-ms-animation-direction: alternate;
+	transform-origin: bottom;
+	z-index: 1;
+	background-image: linear-gradient(to right, #289205, green);
+}
+#hojas {
+	width: 100%;
+	height: 80px;
+	top: 320px;
+	background-color: green;
+	border-radius: 155px/45px;
+	z-index: 15;
+}
+@keyframes ojoizquierdo {
+	0% {
+		
+	}
+	50% {
+		
+	}
+	100% {
+		transform: scaleY(0);
+	}
+}
+#ojoizquierdo {
+	width: 30px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+	top: 50px;
+	left: 16px;
+	border-radius: 48px/92px;
+	background-image: radial-gradient(20px 35px, white, black 30%);
+	-ms-animation-name: ojoizquierdo;
+	-ms-animation-delay: 5s;
+	-ms-animation-duration: 2s;
+	-ms-animation-iteration-count: 4;
+	-ms-animation-timing-function: ease-in;
+	-ms-animation-direction: alternate;
+}
+@keyframes ojoderecho {
+	0% {
+		
+	}
+	50% {
+		
+	}
+	70% {
+		transform: scaleY(0);
+	}
+}
+#ojoderecho {
+	width: 30px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+	top: 50px;
+	left: 130px;
+	border-radius: 48px/92px;
+	background-image: radial-gradient(20px 35px, white, black 30%);
+	-ms-animation-name: ojoderecho;
+	-ms-animation-delay: 5s;
+	-ms-animation-duration: 2s;
+	-ms-animation-iteration-count: 4;
+	-ms-animation-timing-function: ease-in;
+	-ms-animation-direction: alternate;
+}
+#boca1 {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background-color: #A4FF2D;
+	top: 100px;
+	left: 60px;
+	border-radius: 50px;
+	box-shadow: 4px -2px 11px -3px;
+	z-index: 20;
+	background-image: radial-gradient(#A4FF2D, #81DE27 80%);
+}
+@keyframes boca2 {
+	0% {
+		
+	}
+	50% {
+		
+	}
+	100% {
+		transform: scale(5);
+	}
+}
+#boca2 {
+	width: 40px;
+	height: 40px;
+	background-color: green;
+	position: absolute;
+	top: 110px;
+	left: 70px;
+	border-radius: 50px;
+	z-index: 21;
+	-ms-animation-name: boca2;
+	-ms-animation-delay: 5s;
+	-ms-animation-duration: 1s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-timing-function: ease-in;
+	background-image: radial-gradient(#005900, green);
+}
+@keyframes sol {
+	0% {
+		
+	}
+	50% {
+		
+	}
+	80% {
+		transform: translate(0px, 600px);
+	}
+	100% {
+		transform: translate(0px, 600px);
+	}
+}
+#sol {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 700px;
+	top: -100px;
+	-ms-animation-name: sol;
+	-ms-animation-delay: 4s;
+	-ms-animation-duration: 10s;
+	-ms-animation-iteration-count: 2;
+	-ms-animation-timing-function: linear;
+	-ms-animation-direction: normal;
+	background-color: yellow;
+	border-radius: 80px;
+	background-image: radial-gradient(yellow, orange);
+	box-shadow: 0 0 20px 15px orange;
+}
+@keyframes pantallarota {
+	0% {
+		opacity: 1;
+	}
+	5% {
+		
+	}
+	90% {
+		
+	}
+	100% {
+		opacity: 0;
+	}
+}
+#pantallarota {
+	width: 300px;
+	height: 300px;
+	background-image: url("brokenscreen.png");
+	position: absolute;
+	left: 349px;
+	top: 181px;
+	opacity: 0;
+	-ms-animation-name: pantallarota;
+	-ms-animation-delay: 6s;
+	-ms-animation-duration: 10s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-timing-function: ease-in;
+	-ms-animation-fill-mode: forwards;
+	z-index: 100;
+}
